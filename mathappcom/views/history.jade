@@ -1,0 +1,18 @@
+extends layout
+
+block content
+    h1 History
+    hr
+    if(users)
+        table.histable
+            thead
+                tr 
+                    th Index
+                    th Result
+                    th Date computing
+            tbody
+                each user in users
+                    tr
+                        td  #{user.index}
+                        td  #{user.result}
+                        td  #{user.date}

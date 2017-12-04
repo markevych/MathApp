@@ -1,0 +1,12 @@
+extends layout
+
+block content
+    h1 Home
+    hr
+    if (user)
+        p You are currently logged in as #{user.username}
+    else
+        p You are currently as a guest
+    ol
+        li You can't use function "method"
+        li You can't see your history of computing

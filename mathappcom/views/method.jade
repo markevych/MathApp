@@ -1,0 +1,13 @@
+extends layout
+
+block content
+    h1 Method
+    hr
+    h2 Fibonacci number
+    p In mathematics, the Fibonacci numbers are the numbers in the following integer sequence, called the Fibonacci sequence, and characterized by the fact that every number after the first two is the sum of the two preceding ones : 
+    form(role='form', action="/numfib", method="post", style='max-width: 300px;')
+        h5 Enter the index of number tha you want to compute (less than 100): 
+        input(type='text', name="index" value=index)
+        button(type='submit') Compute
+        h5 The result is : 
+        input(type='text', name="output" value=output)

@@ -1,0 +1,71 @@
+body {
+  margin: 50px;
+  font: 18px "Times New Roman", Helvetica, Arial, sans-serif;
+  background: #BBD2C5;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #001f3f;
+}
+
+.menu li {
+    float: left;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #0074D9;
+}
+
+.histable {
+    width: 100%;
+}
+
+.histable th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+.histable tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.histable th {
+    background-color: #001f3f;
+    color: white;
+}
+
+input[type=text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid #555;
+}
+
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 3px solid #555;
+}
+
+button {
+    background-color: #0074D9;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}

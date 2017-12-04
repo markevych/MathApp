@@ -1,0 +1,32 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    img(src="/images/logo.png" width='100%')
+    block menu    
+        ul.menu
+            li 
+                a(href="/") Home
+            li 
+                a(href="/theory") Theory
+            li 
+                a(href="/method") Method
+            li 
+                a(href="/links") Links
+            if (user)
+                li 
+                    a(href="/history") History                                
+                li(style="float:right")  
+                    a(href="/logout") Logout
+                if (user.username == 'admin')
+                    li(style="float:right; background:#2ECC40")  
+                        a(href="/") Admin Panel
+            else
+                li(style="float:right") 
+                    a(href="/login" style="float:right") Login
+                li(style="float:right") 
+                    a(href="/register" ) Register
+    block content
