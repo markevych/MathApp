@@ -5,8 +5,8 @@ html
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
-    img(src="/images/logo.png" width='100%')
-    block menu    
+    block menu 
+        img(src="/images/logo.png" width='100%')       
         ul.menu
             li 
                 a(href="/") Home
@@ -29,4 +29,14 @@ html
                     a(href="/login" style="float:right") Login
                 li(style="float:right") 
                     a(href="/register" ) Register
+        if(user)        
+            div#id
+                p User : #{user.username}
+                   
     block content
+    block footer
+        hr
+        footer
+          p Created by: Oleh Markevych
+          p Contact information: 
+            a(href="oleh.markevych@gmail.com") oleh.markevych@gmail.com
